@@ -6,7 +6,7 @@ import Implementacion.*;
 import java.util.Scanner;
 
 public class PooPersonaP01 {
-    ImplePersona ip = new ImplePersona();
+    ImplPersona ip = new ImplPersona();
     
     public void listar(){
         System.out.println(" ");
@@ -41,9 +41,9 @@ public class PooPersonaP01 {
     public void eliminar(){
         listar();
         int opt = 0;
-        Scanner tc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("\nElijA el ID de la persona: ");
-        opt = tc.nextInt();
+        opt = sc.nextInt();
         ip.delete(opt);
         System.out.println("¡ELIMINADO CORRECTAMENTE!");
     }
@@ -51,13 +51,13 @@ public class PooPersonaP01 {
     public static void main(String[] args) {
         PooPersonaP01 po = new PooPersonaP01();
         int opt;
-        Scanner tc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
             String mensaje =("\nEliga la opcion que quieres ejecutar:\n"+
             "\t1 = crear\n\t2 = listar\n\t3 = eliminar -------- ");
             System.out.print(mensaje);
 
         do {
-            opt = tc.nextInt();
+            opt = sc.nextInt();
             switch(opt){
                 case 1: po.crear();
                     System.out.println("¡CREADO CORRECTAMENTE!");break;

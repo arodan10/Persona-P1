@@ -4,7 +4,7 @@ import Entidad.Persona;
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-public class ImplePersona {
+public class ImplPersona {
     
     List<Persona> lis = new CopyOnWriteArrayList<>();
     int id = 0;
