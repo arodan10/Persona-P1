@@ -42,10 +42,10 @@ public class PooPersonaP01 {
         listar();
         int opt = 0;
         Scanner tc = new Scanner(System.in);
-        System.out.print("\nElije el ID de la persona: ");
+        System.out.print("\nElijA el ID de la persona: ");
         opt = tc.nextInt();
         ip.delete(opt);
-        System.out.println("¡SE ELIMINÓ CORRECTAMENTE!");
+        System.out.println("¡ELIMINADO CORRECTAMENTE!");
     }
     
     public static void main(String[] args) {
@@ -53,14 +53,14 @@ public class PooPersonaP01 {
         int opt;
         Scanner tc = new Scanner(System.in);
             String mensaje =("\nElige la opcion que quieres ejecutar:\n"+
-            "\t1 = crear\n\t2 = listar\n\t3 = eliminar --> ");
+            "\t1 = crear\n\t2 = listar\n\t3 = eliminar -------- ");
             System.out.print(mensaje);
 
         do {
             opt = tc.nextInt();
             switch(opt){
                 case 1: po.crear();
-                    System.out.println("¡SE CREO CORRECTAMENTE!");break;
+                    System.out.println("¡CREADO CORRECTAMENTE!");break;
                 case 2: po.listar(); break;
                 case 3: po.eliminar(); break;
             }
