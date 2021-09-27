@@ -30,8 +30,7 @@ public class PooPersonaP01 {
         p2.setNombres("BRYAN");
         p2.setAp_paterno("MONRROY");
         p2.setAp_materno("TUMPI");
-        p2.setSexo("M");
-        
+        p2.setSexo("M");      
        
         
         ip.create(p1);
