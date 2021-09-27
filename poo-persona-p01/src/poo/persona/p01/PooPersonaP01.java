@@ -52,7 +52,7 @@ public class PooPersonaP01 {
         PooPersonaP01 po = new PooPersonaP01();
         int opt;
         Scanner tc = new Scanner(System.in);
-            String mensaje =("\nElige la opcion que quieres ejecutar:\n"+
+            String mensaje =("\nEliga la opcion que quieres ejecutar:\n"+
             "\t1 = crear\n\t2 = listar\n\t3 = eliminar -------- ");
             System.out.print(mensaje);
 
